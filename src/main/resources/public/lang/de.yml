@@ -1,0 +1,193 @@
+# 
+# & Farbcodes sind Möglich, sowie <#HEXCODE> für Hexcode oder <gradient:#START_HECODE,#END_HEXCODE>
+# Parameter sind im Syntax %parameter%
+# \n Für eine neue Zeile
+#
+
+
+errors:
+   unknown_player: "&cUnbekannter Spieler"
+   no_permissions: "&cDu hast keine Rechte für diesen Befehl"
+   no_number: "&cDu musst eine valide Zahl angeben"
+   unknown_group: "&cUnbekannte Gruppe"
+   discord_unknown_command: "&cUnbekannter Befehl"
+   no_console_command: "&cDieser Befehl kann nicht von der Konsole ausgeführt werden"
+   player_not_online: "&cDieser Spieler ist nicht online"
+   you_moved: "&cDu hast dich bewegt"
+   globalmute: "&cGlobalmute ist aktiviert"
+
+inventory:
+   gui:
+      rank: "&4&lRang"
+      rank_confirm: "&4&lRang"
+      settings: "&2&lEinstellungen"
+   item:
+      rank_permanent: "&6Permanent"
+      rank_first: "&e30 Tage"
+      rank_second: "&e7 Tage"
+      rank_third: "&e1 Tag"
+      rank_fourth: "&e1 Stunde"
+      rank_broadcast: "&aRangvergabe broadcasten"
+      rank_silent: "&cRangvergabe nicht broadcasten"
+      settings:
+         join:
+            name: "&7Standort bei Join"
+            spawn: "&aSpawn"
+            not_spawn: "&aDerzeitiger Standort"
+         msg:
+            name: "&7Akzeptiere Privatnachrichten"
+            enabled: "&aAktiviert"
+            disabled: "&cDeaktiviert"
+         tpa:
+            name: "&7Akzeptiere TP-Anfragen"
+            enabled: "&aAktiviert"
+            disabled: "&cDeaktiviert"
+         language:
+            name: "&7Sprache"
+            de: "&eDeutsch"
+            en: "&eEnglisch"
+
+cmd:
+    perms:
+        reloaded: "&aPermissions neu geladen"
+        help: "&7Hilfe - /perms\n&e/perms user help &8- &7Hilfe für /perms user\n&e/perms group help &8- &7Hilfe für /perms group\n&e/perms relaod &8- &7Lädt die Permissions neu"
+        user:
+            get: "&7User - %player%\n&7UUID: &e%uuid%\n&7Group: &e%group%\n&7Chat Prefix: %chatPrefix%\n&7Tab Prefix: %tabPrefix%\n&7Tab Priotität: &e%tabPrio%\n&7Chat Color: %chatColor%\n&7Permissions: &e%permissions%"
+            help: "&e/perms user <User> &8- &7Zeigt Informationen über den Nutzer\n&e/perms user <User> add <Permission> &8- &7Fügt die Permission hinzu\n&e/perms user <User> remove <Permission> &8- &7Entfernt die Permission\n&e/perms user <User> set <Chat/Tab/Prio/Color> <Wert/Clear> &8- &7Setzt den Chat-/Tabprefix/Tabpriorität/Chatcolor\n&e/perms user <User> group <set/remove> [Gruppe] &8- &7Setzt/entfernt die Gruppe des Nutzers\n"
+            add:
+                usage: "Verwendung: &e/perms user <User> add <Permission>"
+                success: "Permission &e%permission%&7 erfolgreich &e%player%&7 hinzugefügt"
+                failure: "&cSpieler %player% hat die Permission %permission% bereits"
+            remove:
+                usage: "Verwendung: &e/perms user <User> remove <Permission>"
+                success: "Permission &e%permission%&7 erfolgreich &e%player%&7 entfernt"
+                failure: "&cSpieler %player% hat die Permission %permission% nicht"
+            set:
+                usage: "Verwendung: &e/perms user <User> set <Chat/Tab/Prio/Color> <Wert/Clear>"
+                chat_remove: "Chatprefix erfolgreich entfernt"
+                chat: "Chatprefix erfolgreich aktualisiert"
+                tab_remove: "Tabprefix erfolgreich entfernt"
+                tab: "Tabprefix erfolgreich aktualisiert"
+                prio_remove: "Priotität erfolgreich entfernt"
+                prio: "Priorität erfolgreich aktualisiert"
+                color_remove: "Chatcolor erfolgreich entfernt"
+                color: "Chatcolor erfolgreich aktualisiert"
+            group:
+                usage: "Verwendung: &e/perms user <User> group <set/remove> [Gruppe]"
+                set: "Nutzer &e%player%&7 zu Gruppe &e%group%&7 gesetetzt"
+                remove: "Gruppe von Nutzer &e%player%&7 entfernt"
+        group:
+            list: "Gruppen: &e%groups%"
+            get: "&7Group - %group%\n&7Chat Prefix: %chatPrefix%\n&7Tab Prefix: %tabPrefix%\n&7Tab Priotität: &e%tabPrio%\n&7Chat Color: %chatColor%\n&7Displayname: %display%\n&7Item: &e%item%\n&7Standardgruppe: %default%\n&7Parents: &e%parents%\n&7Permissions: &e%permissions%"
+            help: "&e/perms group <Gruppe> &8- &7Zeigt Informationen über die Gruppe\n&e/perms group <Gruppe> create &8- &7Erstellt die Gruppe\n&e/perms group <Gruppe> delete &8- &7Löscht die Gruppe\n&e/perms group <Gruppe> add <Permission> &8- &7Fügt die Permission hinzu\n&e/perms group <Gruppe> remove <Permission> &8- &7Entfernt die Permission\n&e/perms group <Gruppe> default &8- &7Setzt die Gruppe zur Standardgruppe\n&e/perms group <Gruppe> set <Chat/Tab/Prio/Color/Item/Display> <Wert/Clear> &8- &7Setzt den Chat-/Tabprefix/Tabpriorität/Chatcolor\n&e/perms group <Gruppe> parent <add/remove> <Parent> &8- &7Fügt eine Parentgruppe hinzu oder entfernt sie"
+            create:
+               success: "Gruppe &e%group%&7 erfolgreich erstellt"
+               failure: "&cGruppe %group% konnte nicht erstellt werden"
+            delete:
+               success: "Gruppe &e%group%&7 erfolgreich gelöscht"
+               failure: "&cGruppe %group% konnte nicht gelöscht werden"
+            add:
+               usage: "Verwendung: &e/perms group <Gruppe> add <Permission>"
+               success: "Permission &e%permission%&7 erfolgreich &e%group%&7 hinzugefügt"
+               failure: "&cGruppe %group% hat die Permission %permission% bereits"
+            remove:
+               usage: "Verwendung: &e/perms group <Gruppe> remove <Permission>"
+               success: "Permission &e%permission%&7 erfolgreich von &e%group%&7 entfernt"
+               failure: "&cGruppe %group% hat die Permission %permission% nicht"
+            default: "Gruppe &e%group%&7 ist nun die Standardgruppe"
+            set:
+                usage: "Verwendung: &e/perms group <Gruppe> set <Chat/Tab/Prio/Color/Item/Display> <Wert/Clear>"
+                chat_remove: "Chatprefix erfolgreich entfernt"
+                chat: "Chatprefix erfolgreich aktualisiert"
+                tab_remove: "Tabprefix erfolgreich entfernt"
+                tab: "Tabprefix erfolgreich aktualisiert"
+                prio_remove: "Priotität erfolgreich entfernt"
+                prio: "Priorität erfolgreich aktualisiert"
+                color_remove: "Chatcolor erfolgreich entfernt"
+                color: "Chatcolor erfolgreich aktualisiert"
+                item_remove: "Item erfolgreich entfernt"
+                item: "Item erfolgreich entfernt"
+                item_unknown: "&cDas ist kein valides Item"
+                display_remove: "Displayname erfolgreich entfernt"
+                display: "Displayname erfolgreich aktualisiert"
+            parent:
+                usage: "Verwendung: &e/perms group <Gruppe> parent <add/remove> <Parent>"
+                add: "Parent &e%parent%&7 zu Gruppe &e%group%&7 hinzugefügt"
+                remove: "Parent &e%parent%&7 von Gruppe &e%group%&7 entfernt"
+    rank:
+        usage: "Verwendung: &e/rank <Spieler> [Gruppe] [-s/-t=Zeit]"
+        success: "Erfolgreich Gruppe &e%group%&7 an &e%player%&7 gegeben"
+        received: "Dir wurde die Gruppe &e%group%&7 gesetzt"
+        broadcast: "Der Spieler &e%player%&7 hat die Gruppe &e%group%&7 erhalten"
+    gamemode:
+       usage: "Verwendung: &e/gamemode <0/1/2/3> [Spieler]"
+       own_changed: "Dein Gamemode wurde zu &e%gamemode%&7 gewechselt"
+       other_changed: "Du hast den Gamemode für &e%player%&7 zu &e%gamemode%&7 gewechselt"
+    clear:
+       own: "Dein Inventar wurde geleert"
+       other: "Das Inventar von %player% wurder erfolgreich geleert"
+    sun: "Die Sonne scheint"
+    day: "Es ist nun Tag"
+    night: "Es ist nun Nacht"
+    setspawn: "Spawn gesetzt"
+    spawn:
+       starting: "Starte Teleport. Bewege dich nicht"
+       teleported: "Du wurdest zum Spawn teleportiert"
+    msg:
+       usage: "Verwendung: &e/msg <Spieler> <Nachricht>"
+       format_incoming: "&8[&c%player% &7-> &cDir&8]&7 %message%"
+       format_outgoing: "&8[&cDu &7-> &c%player%&8]&7 %message%"
+       spy_format: "&8[&c%player% &7-> &c%recepient%&8]&7 %message%"
+       receipient_disabled: "&cDer Empfänger hat Privatnachrichten deaktiviert"
+    msgspy:
+       disabled: "MsgSpy für dich &cdeaktiviert"
+       disable_other: "Du hast MsgSpy für &e%player% &cdeaktiviert"
+       enabled: "MsgSpy für dich &aaktiviert"
+       enable_other: "Du hast MsgSpy für &e%player% &aaktiviert"
+       prefix: "&8[&cMsgSpy&8] &7"
+    cmdspy:
+       disabled: "CmdSpy für dich &cdeaktiviert"
+       disable_other: "Du hast CmdSpy für &e%player% &cdeaktiviert"
+       enabled: "CmdSpy für dich &aaktiviert"
+       enable_other: "Du hast CmdSpy für &e%player% &aaktiviert"
+       prefix: "&8[&dCmdSpy&8] &7"
+       format: "&c%player%&7: &e%command%"
+    modlog:
+       disabled: "ModLog für dich &cdeaktiviert"
+       disable_other: "Du hast ModLog für &e%player% &cdeaktiviert"
+       enabled: "ModLog für dich &aaktiviert"
+       enable_other: "Du hast ModLog für &e%player% &aaktiviert"
+       prefix: "&8[&cModLog&8] &7"
+       format: "&c%sender%&7: &e%command%"
+    god:
+       disabled: "God für dich &cdeaktiviert"
+       disable_other: "Du hast God für &e%player% &cdeaktiviert"
+       enabled: "God für dich &aaktiviert"
+       enable_other: "Du hast God für &e%player% &aaktiviert"
+    globalmute:
+       broadcast:
+          true: "&c&lGlobalmute &7wurde &aaktiviert"
+          false: "&c&lGlobalmute &7wurde &cdeaktiviert"
+       true: "Du hast &c&lGlobalmute &aaktiviert"
+       false: "Du hast &c&lGlobalmute &cdeaktiviert"
+    ping: "Ping von &e%player%&7: &a%ping%ms"
+    other_command:
+    
+scoreboard:
+   title: "&c&lDev Server"
+   ping: "&a&lPing:"
+   rank: "&c&lRang:"               
+               
+discord:
+   cmd:
+      link:
+         description: "Verbinde deinen Discord Account mit deinem Minecraft Account"
+         option_user: "Nutzername"
+         option_user_description: "Dein Nutzername"
+         response: "Hier ist dein Verifizierungstoken: `%token%` du hast 5 Minuten um ihn zu nutzen"
+         unknown_token: "&cUnbekannter Token"
+         unknown_guild: "&cUnbekannter Server"
+         success: "Dein Discord Account wurde erfolgreich mit deinem Minecraft account verbunden"
+               
+               
+               

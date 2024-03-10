@@ -1,0 +1,35 @@
+#
+#
+#
+#
+
+lang: "de"
+chat_format: "&7%prefix% %player% &8× &7%message%"
+prefix: "<#55ff55>[<gradient:#8000ff,#d900ff>DEV</gradient><#55ff55>] <#aaaaaa>"
+base_permission: "dev."
+
+log:
+   level: DEBUG # NONE, INFO, WARN, ERROR, DEBUG
+   type: Console # Console, File 
+
+
+discord:
+   enabled: false
+   token: "Token"
+   guild: "GUILD_ID_HERE"
+   
+playerlist:
+    header: "\n<#aaaaff>[<gradient:#8000ff,#d900ff>DEV Server</gradient><#aaaaff>]\n"
+    footer: "\n§aPing: %ping%\n"
+
+
+perms:
+   wildcard: '*'
+   enable_op: "all" # all: opped players have every permission. normal: opped players cant edit permissions. none: opped players do not get any extra permissions
+   default_item: IRON_HELMET
+   rank_gui_temporary:
+      first: "30d"
+      second: "7d"
+      third: "1d"
+      fourth: "1h"
+   
